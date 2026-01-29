@@ -1,6 +1,6 @@
 # Mahendra Reddy Akuri
 
-![Headshot](assets/headshot.jpg)
+![photo](photo.jpeg)
 
 **Email:** mahendrareddyakuri@gmail.com  
 **Phone:** 410-710-7828  
