@@ -61,20 +61,6 @@ This project is a web-based application designed to analyze health-related data 
 
 ---
 
-## 4. Technology Stack & Modules
 
-### Software Requirements
-- **Language:** Python 3.10+  
-- **Frameworks:** Streamlit (UI), Scikit-learn (ML), Pandas/NumPy (Data), Google GenAI SDK (LLM)  
-- **Security:** python-dotenv for secure API key handling  
-
-### System Modules
-1. **User Interface Module:** Streamlit-based web interface for simple data collection.  
-2. **Data Preprocessing Module:** Handles encoding, outlier capping, and feature scaling using `StandardScaler`.  
-3. **Machine Learning Module:** Runs input through a selected model (e.g., XGBoost or Random Forest) to produce a probability score.  
-4. **AI Guidance Module:** Sends the risk score and profile to Gemini AI to generate bullet points of wellness guidance.  
-
----
-
-## 5. Conclusion
+## Summary
 The system successfully integrates predictive analytics and generative AI to create an early risk awareness tool. By prioritizing user accessibility and ethical safety (no medical diagnosis), it encourages healthy lifestyle choices and early intervention.
