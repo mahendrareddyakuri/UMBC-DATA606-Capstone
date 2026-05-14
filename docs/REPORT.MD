@@ -108,9 +108,7 @@ XGBoost performed best and was selected.
 
 ### 4.6 Metrics
 - Accuracy  
-- Precision  
 - Recall (important for medical use)  
-- F1 Score  
 - Confusion Matrix  
 
 ---
