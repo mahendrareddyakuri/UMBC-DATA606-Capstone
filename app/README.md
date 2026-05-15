@@ -1,162 +1,308 @@
-Heart Disease Prediction and AI-Based Health Guidance System
+# Heart Disease Prediction & AI Health Guidance System
 
-An AI-powered Heart Disease Risk Prediction web application built using Machine Learning, Streamlit, and Google Gemini AI.
-This application predicts the probability of heart disease risk based on user-provided health information and generates personalized wellness tips using Generative AI.
+A machine learning-powered web application that predicts the likelihood of heart disease using simple health-related inputs and provides personalized wellness recommendations using Google Gemini AI.
 
-📘 Project Information
-Prepared For
+Built with Python, Streamlit, XGBoost, and Gemini LLM.
 
-Chaojie Wang
+---
 
-Author
+# Project Overview
 
-Mahendra Reddy Akuri
+This project combines a trained XGBoost classification model with Google Gemini AI to create an intelligent and user-friendly heart disease risk assessment system.
 
-Program
+Users answer a few simple health questions through a Streamlit web interface. The application then:
 
-UMBC Data Science Master’s Degree Capstone
+- Predicts heart disease risk probability
+- Classifies the user as Low Risk or High Risk
+- Generates personalized AI-powered lifestyle recommendations
+- Displays results in plain and easy-to-understand language
 
- Features
- Heart disease risk prediction using Machine Learning
- Interactive Streamlit web application
- AI-generated personalized health recommendations
- Probability-based risk analysis
- Beginner-friendly and clean UI
- Real-time prediction results
- Gemini AI integration for wellness guidance
-Technologies Used
-Python
-Streamlit
-Pandas
-Scikit-learn
-Pickle
-Google Gemini AI
-dotenv
-📂 Project Structure
-heart-disease-prediction/
+The system is designed for educational and awareness purposes only and is NOT intended for medical diagnosis.
+
+---
+
+# Features
+
+- Heart disease risk prediction using Machine Learning
+- AI-generated personalized health tips using Gemini
+- User-friendly Streamlit interface
+- Real-time prediction results
+- Probability-based risk scoring
+- Simple non-clinical questionnaire
+- Secure API integration using Streamlit Secrets
+- Cached model loading for improved performance
+
+---
+
+# Technologies Used
+
+## Machine Learning
+- XGBoost Classifier
+- Scikit-learn
+- Pandas
+- NumPy
+
+## Frontend / Deployment
+- Streamlit
+
+## AI Integration
+- Google Gemini 2.5 Flash
+- Google GenAI SDK
+
+## Model Storage
+- Pickle
+
+---
+
+# Dataset
+
+This project uses the UCI Heart Disease Dataset.
+
+Dataset Source:  
+https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+
+## Features Used
+
+- Age
+- Gender
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Diabetes / Fasting Blood Sugar
+- Maximum Heart Rate
+
+## Target Variable
+
+- 0 → No Heart Disease
+- 1 → Heart Disease Present
+
+---
+
+# How the Application Works
+
+## Step 1 — User Input
+
+The user answers simple health-related questions such as:
+
+- Age
+- Gender
+- Chest discomfort
+- Blood pressure history
+- Cholesterol history
+- Diabetes status
+- Breathlessness during activity
+
+---
+
+## Step 2 — Data Processing
+
+The application:
+
+- Converts user-friendly answers into model-compatible values
+- Encodes categorical features
+- Aligns feature columns with the training schema
+- Applies feature scaling using StandardScaler
+
+---
+
+## Step 3 — Risk Prediction
+
+The trained XGBoost model predicts:
+
+- Heart disease class
+- Risk probability percentage
+
+---
+
+## Step 4 — AI Health Guidance
+
+Google Gemini AI generates:
+
+- Personalized lifestyle guidance
+- Exercise recommendations
+- Diet suggestions
+- Sleep and stress management tips
+
+The AI output is controlled using strict prompt engineering:
+
+- No diagnosis
+- No medication suggestions
+- Simple English only
+- Maximum 10 bullet points
+
+---
+
+# Project Structure
+
+```bash
+Heart-Disease-App/
 │
 ├── app.py
 ├── heart_model.pkl
 ├── requirements.txt
+├── .streamlit/
+│   └── secrets.toml
 ├── README.md
-├── .env
-│
-└── assets/
-    ├── homepage.png
-    └── prediction_result.png
-⚙️ Installation & Setup
-Clone the Repository
+└── dataset/
+```
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash
 git clone https://github.com/mahendrareddyakuri/UMBC-DATA606-Capstone.git
+```
+
+```bash
 cd UMBC-DATA606-Capstone
-Create Virtual Environment (Recommended)
-Windows
+```
+
+---
+
+# Create Virtual Environment
+
+## Windows
+
+```bash
 python -m venv venv
 venv\Scripts\activate
-Linux / Mac
+```
+
+## Linux / Mac
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-Install Dependencies
+```
+
+---
+
+# Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Configure Gemini API Key
+```
 
-Create a .env file in the project root:
+---
 
-GEMINI_API_KEY="AIzaSyCuTqACqluca-jW4yAtzcAhMO5oqG7sIy8"
+# Configure Gemini API Key
 
-Or use Streamlit Secrets:
+Create the following file:
 
-GEMINI_API_KEY="AIzaSyCuTqACqluca-jW4yAtzcAhMO5oqG7sIy8"
- Run the Application
+```bash
+.streamlit/secrets.toml
+```
+
+Add:
+
+```toml
+GEMINI_API_KEY = ""AIzaSyCuTqACqluca-jW4yAtzcAhMO5oqG7sIy8""
+```
+
+---
+
+# Run the Application
+
+```bash
 streamlit run app.py
- How the Application Works
-User enters health-related details.
-Input data is transformed into ML-ready format.
-The trained machine learning model predicts heart disease risk.
-Prediction probability is calculated.
-Gemini AI generates personalized health and wellness tips.
-Final prediction results are displayed in the Streamlit dashboard.
-<img width="802" height="766" alt="streamlit606_1" src="https://github.com/user-attachments/assets/dd0adc2b-b336-4886-abbc-77f4ffc1edbc" />
-<img width="669" height="540" alt="Streamlit_02" src="https://github.com/user-attachments/assets/40a4f1f4-64df-459f-8cf2-9fdf098c20c7" />
+```
+
+---
+
+# Model Performance
+
+| Model | Accuracy | Recall |
+|------|------|------|
+| Logistic Regression | 81% | 81% |
+| Random Forest | 80% | 81% |
+| SVM | 83% | 88% |
+| XGBoost | 85.51% | 85% |
+
+XGBoost achieved the best overall performance and was selected for deployment.
+
+---
+
+# Example Application Flow
+
+## User Inputs
+
+- Age: 52
+- Gender: Male
+- High Blood Pressure: Yes
+- Diabetes: No
+
+## Prediction Output
+
+- High Risk of Heart Disease
+- Estimated Probability: 78.45%
+<img width="802" height="766" alt="streamlit606_1" src="https://github.com/user-attachments/assets/08a95ac9-83bb-4d75-866a-ea3f518cb8be" />
+
+## AI Guidance
+
+<img width="669" height="540" alt="Streamlit_02" src="https://github.com/user-attachments/assets/bc661dc5-ae7c-404b-9ea0-a8f24b5b81e7" />
 
 
-Features Visible:
-User-friendly health questionnaire
-Age and gender selection
-Chest pain and blood pressure inputs
-Diabetes and cholesterol history
-Simple and clean Streamlit interface
-Prediction Result & AI Health Tips
+---
 
-Features Visible:
-Risk probability prediction
-High-risk / low-risk classification
-AI-generated wellness suggestions
-Gemini-powered health guidance
-Personalized healthy lifestyle recommendations
-AI Health Guidance
+# Safety Notice
 
-The application uses Google Gemini AI to generate:
+This application is designed for:
 
-Healthy eating suggestions
-Exercise recommendations
-Sleep improvement guidance
-Stress management habits
-General wellness tips
+- Educational use
+- Research demonstrations
+- Preventive health awareness
 
-The AI recommendations are:
+This application:
 
-Simple to understand
-Positive and encouraging
-Non-medical lifestyle guidance only
+- Does NOT provide medical diagnosis
+- Does NOT replace professional healthcare advice
+- Should NOT be used for emergency medical decisions
 
-The prediction results:
+Always consult a licensed healthcare professional for medical concerns.
 
-Are NOT medical diagnoses
-Should NOT replace professional healthcare advice
-Are intended for early awareness and learning purposes
+---
 
-Always consult certified healthcare professionals for medical concerns.
+# Future Improvements
 
-GitHub Repository:
-https://github.com/mahendrareddyakuri/UMBC-DATA606-Capstone.git
+- SHAP explainability integration
+- Additional clinical features
+- Real-world validation studies
+- Multi-language support
+- Federated learning support
+- Improved UI/UX
+- Cloud deployment
 
-LinkedIn Profile:
-https://www.linkedin.com/in/mahendra-reddy-akuri-6b6976277/
+---
 
-PowerPoint Presentation:
-https://docs.google.com/presentation/d/1lTPJgnKKfciBwd0vLyUJYqsFHJimzkKa-pkG7HUIrxc/edit?usp=sharing
+# Author
 
-YouTube Demonstration:
-https://youtu.be/KQOULHU3mwg
- Future Improvements
-Deploy on Streamlit Cloud or AWS
-Add user authentication system
-Improve ML model accuracy
-Add historical prediction tracking
-Multi-language support
-Advanced visualization dashboards
-Integration with healthcare APIs
- Acknowledgment
+## Mahendra Reddy Akuri
 
-Special thanks to:
+- UMBC Data Science Graduate Student
+- DATA 606 Capstone Project
 
-University of Maryland, Baltimore County
-Chaojie Wang
-Faculty members, mentors, and peers who supported the capstone project development.
- Author
+### Links
 
-Mahendra Reddy Akuri
+- GitHub: https://github.com/mahendrareddyakuri
+- LinkedIn: https://www.linkedin.com/in/mahendra-reddy-akuri-6b6976277/
+- YouTube Demo: https://youtu.be/KQOULHU3mwg
 
-GitHub Repository:
-https://github.com/mahendrareddyakuri/UMBC-DATA606-Capstone.git
+---
 
-LinkedIn Profile:
-https://www.linkedin.com/in/mahendra-reddy-akuri-6b6976277/
+# References
 
-PowerPoint Presentation:
-https://docs.google.com/presentation/d/1lTPJgnKKfciBwd0vLyUJYqsFHJimzkKa-pkG7HUIrxc/edit?usp=sharing
+- UCI Machine Learning Repository
+- Scikit-learn Documentation
+- XGBoost Documentation
+- Streamlit Documentation
+- Google Gemini API Documentation
+- World Health Organization Cardiovascular Reports
 
-YouTube Demonstration:
-https://youtu.be/KQOULHU3mwg
+---
 
-This project is open-source and available under the MIT License
+# License
+
+This project is intended for educational and academic purposes only.
