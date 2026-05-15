@@ -2,7 +2,7 @@
 
 A machine learning-powered web application that predicts the likelihood of heart disease using simple health-related inputs and provides personalized wellness recommendations using Google Gemini AI.
 
-Built with Python, Streamlit, XGBoost, and Gemini LLM.
+Built with Python, Streamlit, XGBoost, and Gemini AI for guidance tips.
 
 ---
 
@@ -199,7 +199,7 @@ Create the following file:
 Add:
 
 ```toml
-GEMINI_API_KEY = ""AIzaSyCuTqACqluca-jW4yAtzcAhMO5oqG7sIy8""
+GEMINI_API_KEY = "AIzaSyCuTqACqluca-jW4yAtzcAhMO5oqG7sIy8"
 ```
 
 ---
