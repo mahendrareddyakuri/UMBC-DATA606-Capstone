@@ -1,4 +1,4 @@
-# ❤️ Heart Disease Prediction and AI-Based Health Guidance System
+#  Heart Disease Prediction and AI-Based Health Guidance System
 
 ## UMBC DATA 606 Capstone Project
 
@@ -13,7 +13,7 @@ The goal is to make preventive heart health awareness more accessible to the gen
 
 ---
 
-# 👨‍🎓 Author
+#  Author
 
 Mahendra Reddy Akuri
 
@@ -27,7 +27,7 @@ Dr. Chaojie (Jay) Wang
 
 ---
 
-# 🔗 Project Links
+#  Project Links
 
 - [GitHub Repository](https://github.com/mahendrareddyakuri/UMBC-DATA606-Capstone.git?utm_source=chatgpt.com)
 - [LinkedIn Profile](https://www.linkedin.com/in/mahendra-reddy-akuri-6b6976277/?utm_source=chatgpt.com)
@@ -36,7 +36,7 @@ Dr. Chaojie (Jay) Wang
 
 ---
 
-# 📌 Project Objective
+#  Project Objective
 
 The project predicts heart disease risk using:
 - Age
@@ -51,7 +51,7 @@ The application then generates AI-based wellness guidance using Google Gemini.
 
 ---
 
-# 🚀 Features
+#  Features
 
 ## Machine Learning Prediction
 - XGBoost classification model
@@ -76,7 +76,7 @@ The AI system strictly avoids:
 
 ---
 
-# 🧠 Technologies Used
+#  Technologies Used
 
 | Category | Technologies |
 |---|---|
@@ -90,7 +90,7 @@ The AI system strictly avoids:
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```bash
 Heart-Disease-App/
@@ -112,7 +112,7 @@ Heart-Disease-App/
 
 ---
 
-# 📊 Dataset Information
+#  Dataset Information
 
 ## Dataset Source
 UCI Heart Disease Dataset
@@ -147,7 +147,7 @@ UCI Heart Disease Dataset
 
 ---
 
-# ⚙️ Machine Learning Workflow
+#  Machine Learning Workflow
 
 ## Data Preprocessing
 - Missing value handling
@@ -172,7 +172,7 @@ XGBoost achieved the best performance.
 
 ---
 
-# 🤖 Gemini AI Integration
+#  Gemini AI Integration
 
 The project integrates Google Gemini 2.5 Flash to generate personalized health guidance.
 
@@ -189,7 +189,7 @@ The AI system:
 
 ---
 
-# 💻 Installation
+#  Installation
 
 ## Clone Repository
 
@@ -200,7 +200,7 @@ cd UMBC-DATA606-Capstone
 
 ---
 
-# 🐍 Create Virtual Environment
+#  Create Virtual Environment
 
 ## Windows
 
@@ -218,7 +218,7 @@ source venv/bin/activate
 
 ---
 
-# 📦 Install Dependencies
+#  Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -226,7 +226,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🔑 Configure Gemini API Key
+#  Configure Gemini API Key
 
 Create this file:
 
@@ -242,7 +242,7 @@ GEMINI_API_KEY="YOUR_API_KEY"
 
 ---
 
-# ▶️ Run the Application
+#  Run the Application
 
 ```bash
 streamlit run app.py
@@ -250,7 +250,7 @@ streamlit run app.py
 
 ---
 
-# 📷 Application Workflow
+#  Application Workflow
 
 1. User enters health information
 2. Inputs are processed and encoded
@@ -261,7 +261,7 @@ streamlit run app.py
 
 ---
 
-# 📚 Files Description
+#  Files Description
 
 | File | Description |
 |---|---|
@@ -274,7 +274,7 @@ streamlit run app.py
 
 ---
 
-# ⚠️ Disclaimer
+#  Disclaimer
 
 This project is:
 - Educational
@@ -290,7 +290,7 @@ Always consult healthcare professionals for medical advice.
 
 ---
 
-# 📖 References
+#  References
 
 - UCI Machine Learning Repository
 - XGBoost Documentation
@@ -300,7 +300,7 @@ Always consult healthcare professionals for medical advice.
 
 ---
 
-# ⭐ Acknowledgements
+#  Acknowledgements
 
 Special thanks to:
 - UMBC Data Science Department
