@@ -5,8 +5,8 @@
 
 **GitHub Repository:** [https://github.com/mahendrareddyakuri/UMBC-DATA606-Capstone](https://github.com/mahendrareddyakuri/UMBC-DATA606-Capstone)  
 **LinkedIn Profile:** [https://www.linkedin.com/in/mahendra-reddy-akuri-6b6976277/](https://www.linkedin.com/in/mahendra-reddy-akuri-6b6976277/)  
-**PowerPoint Presentation:** *To be added after presentation is created*  
-**YouTube Video:** *To be added after project demo video is recorded*  
+**PowerPoint Presentation:** (https://docs.google.com/presentation/d/1lTPJgnKKfciBwd0vLyUJYqsFHJimzkKa-pkG7HUIrxc/edit?usp=sharing)
+**YouTube Video:** (https://youtu.be/KQOULHU3mwg) 
 
 ---
 
