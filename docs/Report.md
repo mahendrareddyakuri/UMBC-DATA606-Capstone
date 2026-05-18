@@ -4,6 +4,7 @@
 
 **Prepared for:** Dr. Chaojie (Jay) Wang  
 **Author:** Mahendra Reddy Akuri  
+**Semester:** 2026 Spring 
 **Program:** UMBC Data Science Master’s Degree Capstone  
 
 ---
